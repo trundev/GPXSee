@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{89AC4939-2B1C-4F3A-9637-A843BBA7FA48}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <NMakeBuildCommandLine>cd ..\build-gpxsee-Desktop_Qt_5_12_2_MSVC2017_64bit-$(Configuration) &amp; nmake all</NMakeBuildCommandLine>
+    <NMakeOutput>..\build-gpxsee-Desktop_Qt_5_12_2_MSVC2017_64bit-$(Configuration)\$(Configuration)\GPXSee.exe</NMakeOutput>
+    <NMakeCleanCommandLine>cd ..\build-gpxsee-Desktop_Qt_5_12_2_MSVC2017_64bit-$(Configuration) &amp; nmake clean</NMakeCleanCommandLine>
+    <NMakePreprocessorDefinitions>_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <OutDir>$(SolutionDir)..\build-gpxsee-Desktop_Qt_5_12_2_MSVC2017_$(PlatformArchitecture)bit-$(Configuration)</OutDir>
+    <IntDir>$(OutDir)\$(Configuration)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <NMakeBuildCommandLine>cd ..\build-gpxsee-Desktop_Qt_5_12_2_MSVC2017_64bit-$(Configuration) &amp; nmake all</NMakeBuildCommandLine>
+    <NMakeOutput>..\build-gpxsee-Desktop_Qt_5_12_2_MSVC2017_64bit-$(Configuration)\$(Configuration)\GPXSee.exe</NMakeOutput>
+    <NMakeCleanCommandLine>cd ..\build-gpxsee-Desktop_Qt_5_12_2_MSVC2017_64bit-$(Configuration) &amp; nmake clean</NMakeCleanCommandLine>
+    <NMakePreprocessorDefinitions>NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <OutDir>$(SolutionDir)..\build-gpxsee-Desktop_Qt_5_12_2_MSVC2017_$(PlatformArchitecture)bit-$(Configuration)</OutDir>
+    <IntDir>$(OutDir)\$(Configuration)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common\config.h" />
+    <ClInclude Include="src\common\coordinates.h" />
+    <ClInclude Include="src\common\greatcircle.h" />
+    <ClInclude Include="src\common\kv.h" />
+    <ClInclude Include="src\common\programpaths.h" />
+    <ClInclude Include="src\common\range.h" />
+    <ClInclude Include="src\common\rectc.h" />
+    <ClInclude Include="src\common\rtree.h" />
+    <ClInclude Include="src\common\staticassert.h" />
+    <ClInclude Include="src\common\tifffile.h" />
+    <ClInclude Include="src\common\util.h" />
+    <ClInclude Include="src\common\wgs84.h" />
+    <ClInclude Include="src\data\area.h" />
+    <ClInclude Include="src\data\csvparser.h" />
+    <ClInclude Include="src\data\data.h" />
+    <ClInclude Include="src\data\dem.h" />
+    <ClInclude Include="src\data\exifparser.h" />
+    <ClInclude Include="src\data\fitparser.h" />
+    <ClInclude Include="src\data\geojsonparser.h" />
+    <ClInclude Include="src\data\gpxparser.h" />
+    <ClInclude Include="src\data\graph.h" />
+    <ClInclude Include="src\data\igcparser.h" />
+    <ClInclude Include="src\data\imageinfo.h" />
+    <ClInclude Include="src\data\kmlparser.h" />
+    <ClInclude Include="src\data\locparser.h" />
+    <ClInclude Include="src\data\nmeaparser.h" />
+    <ClInclude Include="src\data\oziparsers.h" />
+    <ClInclude Include="src\data\parser.h" />
+    <ClInclude Include="src\data\path.h" />
+    <ClInclude Include="src\data\poi.h" />
+    <ClInclude Include="src\data\polygon.h" />
+    <ClInclude Include="src\data\route.h" />
+    <ClInclude Include="src\data\routedata.h" />
+    <ClInclude Include="src\data\slfparser.h" />
+    <ClInclude Include="src\data\tcxparser.h" />
+    <ClInclude Include="src\data\track.h" />
+    <ClInclude Include="src\data\trackdata.h" />
+    <ClInclude Include="src\data\trackpoint.h" />
+    <ClInclude Include="src\data\waypoint.h" />
+    <ClInclude Include="src\GUI\app.h" />
+    <ClInclude Include="src\GUI\areaitem.h" />
+    <ClInclude Include="src\GUI\axisitem.h" />
+    <ClInclude Include="src\GUI\cadencegraph.h" />
+    <ClInclude Include="src\GUI\cadencegraphitem.h" />
+    <ClInclude Include="src\GUI\colorbox.h" />
+    <ClInclude Include="src\GUI\coordinatesitem.h" />
+    <ClInclude Include="src\GUI\cpuarch.h" />
+    <ClInclude Include="src\GUI\elevationgraph.h" />
+    <ClInclude Include="src\GUI\elevationgraphitem.h" />
+    <ClInclude Include="src\GUI\exportdialog.h" />
+    <ClInclude Include="src\GUI\filebrowser.h" />
+    <ClInclude Include="src\GUI\fileselectwidget.h" />
+    <ClInclude Include="src\GUI\font.h" />
+    <ClInclude Include="src\GUI\format.h" />
+    <ClInclude Include="src\GUI\gearratiograph.h" />
+    <ClInclude Include="src\GUI\gearratiographitem.h" />
+    <ClInclude Include="src\GUI\graphitem.h" />
+    <ClInclude Include="src\GUI\graphtab.h" />
+    <ClInclude Include="src\GUI\graphview.h" />
+    <ClInclude Include="src\GUI\griditem.h" />
+    <ClInclude Include="src\GUI\gui.h" />
+    <ClInclude Include="src\GUI\heartrategraph.h" />
+    <ClInclude Include="src\GUI\heartrategraphitem.h" />
+    <ClInclude Include="src\GUI\icons.h" />
+    <ClInclude Include="src\GUI\infoitem.h" />
+    <ClInclude Include="src\GUI\keys.h" />
+    <ClInclude Include="src\GUI\mapview.h" />
+    <ClInclude Include="src\GUI\margins.h" />
+    <ClInclude Include="src\GUI\markeritem.h" />
+    <ClInclude Include="src\GUI\oddspinbox.h" />
+    <ClInclude Include="src\GUI\opengl.h" />
+    <ClInclude Include="src\GUI\optionsdialog.h" />
+    <ClInclude Include="src\GUI\palette.h" />
+    <ClInclude Include="src\GUI\pathitem.h" />
+    <ClInclude Include="src\GUI\percentslider.h" />
+    <ClInclude Include="src\GUI\powergraph.h" />
+    <ClInclude Include="src\GUI\powergraphitem.h" />
+    <ClInclude Include="src\GUI\routeitem.h" />
+    <ClInclude Include="src\GUI\scaleitem.h" />
+    <ClInclude Include="src\GUI\searchpointer.h" />
+    <ClInclude Include="src\GUI\settings.h" />
+    <ClInclude Include="src\GUI\sliderinfoitem.h" />
+    <ClInclude Include="src\GUI\slideritem.h" />
+    <ClInclude Include="src\GUI\speedgraph.h" />
+    <ClInclude Include="src\GUI\speedgraphitem.h" />
+    <ClInclude Include="src\GUI\stylecombobox.h" />
+    <ClInclude Include="src\GUI\temperaturegraph.h" />
+    <ClInclude Include="src\GUI\temperaturegraphitem.h" />
+    <ClInclude Include="src\GUI\timetype.h" />
+    <ClInclude Include="src\GUI\tooltip.h" />
+    <ClInclude Include="src\GUI\trackinfo.h" />
+    <ClInclude Include="src\GUI\trackitem.h" />
+    <ClInclude Include="src\GUI\units.h" />
+    <ClInclude Include="src\GUI\waypointitem.h" />
+    <ClInclude Include="src\map\albersequal.h" />
+    <ClInclude Include="src\map\angularunits.h" />
+    <ClInclude Include="src\map\atlas.h" />
+    <ClInclude Include="src\map\calibrationpoint.h" />
+    <ClInclude Include="src\map\color.h" />
+    <ClInclude Include="src\map\coordinatesystem.h" />
+    <ClInclude Include="src\map\crs.h" />
+    <ClInclude Include="src\map\ct.h" />
+    <ClInclude Include="src\map\datum.h" />
+    <ClInclude Include="src\map\downloader.h" />
+    <ClInclude Include="src\map\ellipsoid.h" />
+    <ClInclude Include="src\map\emptymap.h" />
+    <ClInclude Include="src\map\gcs.h" />
+    <ClInclude Include="src\map\geocentric.h" />
+    <ClInclude Include="src\map\geotiff.h" />
+    <ClInclude Include="src\map\geotiffmap.h" />
+    <ClInclude Include="src\map\image.h" />
+    <ClInclude Include="src\map\jnxmap.h" />
+    <ClInclude Include="src\map\krovak.h" />
+    <ClInclude Include="src\map\lambertazimuthal.h" />
+    <ClInclude Include="src\map\lambertconic.h" />
+    <ClInclude Include="src\map\latlon.h" />
+    <ClInclude Include="src\map\linearunits.h" />
+    <ClInclude Include="src\map\map.h" />
+    <ClInclude Include="src\map\mapfile.h" />
+    <ClInclude Include="src\map\maplist.h" />
+    <ClInclude Include="src\map\mapsource.h" />
+    <ClInclude Include="src\map\matrix.h" />
+    <ClInclude Include="src\map\mbtilesmap.h" />
+    <ClInclude Include="src\map\mercator.h" />
+    <ClInclude Include="src\map\obliquestereographic.h" />
+    <ClInclude Include="src\map\onlinemap.h" />
+    <ClInclude Include="src\map\osm.h" />
+    <ClInclude Include="src\map\ozf.h" />
+    <ClInclude Include="src\map\ozimap.h" />
+    <ClInclude Include="src\map\pcs.h" />
+    <ClInclude Include="src\map\pointd.h" />
+    <ClInclude Include="src\map\polarstereographic.h" />
+    <ClInclude Include="src\map\primemeridian.h" />
+    <ClInclude Include="src\map\projection.h" />
+    <ClInclude Include="src\map\rectd.h" />
+    <ClInclude Include="src\map\rmap.h" />
+    <ClInclude Include="src\map\tar.h" />
+    <ClInclude Include="src\map\tile.h" />
+    <ClInclude Include="src\map\tileloader.h" />
+    <ClInclude Include="src\map\transform.h" />
+    <ClInclude Include="src\map\transversemercator.h" />
+    <ClInclude Include="src\map\utm.h" />
+    <ClInclude Include="src\map\webmercator.h" />
+    <ClInclude Include="src\map\wms.h" />
+    <ClInclude Include="src\map\wmsmap.h" />
+    <ClInclude Include="src\map\wmts.h" />
+    <ClInclude Include="src\map\wmtsmap.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\common\coordinates.cpp" />
+    <ClCompile Include="src\common\greatcircle.cpp" />
+    <ClCompile Include="src\common\programpaths.cpp" />
+    <ClCompile Include="src\common\range.cpp" />
+    <ClCompile Include="src\common\rectc.cpp" />
+    <ClCompile Include="src\common\tifffile.cpp" />
+    <ClCompile Include="src\common\util.cpp" />
+    <ClCompile Include="src\data\csvparser.cpp" />
+    <ClCompile Include="src\data\data.cpp" />
+    <ClCompile Include="src\data\dem.cpp" />
+    <ClCompile Include="src\data\exifparser.cpp" />
+    <ClCompile Include="src\data\fitparser.cpp" />
+    <ClCompile Include="src\data\geojsonparser.cpp" />
+    <ClCompile Include="src\data\gpxparser.cpp" />
+    <ClCompile Include="src\data\igcparser.cpp" />
+    <ClCompile Include="src\data\kmlparser.cpp" />
+    <ClCompile Include="src\data\locparser.cpp" />
+    <ClCompile Include="src\data\nmeaparser.cpp" />
+    <ClCompile Include="src\data\oziparsers.cpp" />
+    <ClCompile Include="src\data\path.cpp" />
+    <ClCompile Include="src\data\poi.cpp" />
+    <ClCompile Include="src\data\polygon.cpp" />
+    <ClCompile Include="src\data\route.cpp" />
+    <ClCompile Include="src\data\slfparser.cpp" />
+    <ClCompile Include="src\data\tcxparser.cpp" />
+    <ClCompile Include="src\data\track.cpp" />
+    <ClCompile Include="src\GUI\app.cpp" />
+    <ClCompile Include="src\GUI\areaitem.cpp" />
+    <ClCompile Include="src\GUI\axisitem.cpp" />
+    <ClCompile Include="src\GUI\cadencegraph.cpp" />
+    <ClCompile Include="src\GUI\cadencegraphitem.cpp" />
+    <ClCompile Include="src\GUI\colorbox.cpp" />
+    <ClCompile Include="src\GUI\coordinatesitem.cpp" />
+    <ClCompile Include="src\GUI\elevationgraph.cpp" />
+    <ClCompile Include="src\GUI\elevationgraphitem.cpp" />
+    <ClCompile Include="src\GUI\exportdialog.cpp" />
+    <ClCompile Include="src\GUI\filebrowser.cpp" />
+    <ClCompile Include="src\GUI\fileselectwidget.cpp" />
+    <ClCompile Include="src\GUI\format.cpp" />
+    <ClCompile Include="src\GUI\gearratiograph.cpp" />
+    <ClCompile Include="src\GUI\gearratiographitem.cpp" />
+    <ClCompile Include="src\GUI\graphitem.cpp" />
+    <ClCompile Include="src\GUI\graphview.cpp" />
+    <ClCompile Include="src\GUI\griditem.cpp" />
+    <ClCompile Include="src\GUI\gui.cpp" />
+    <ClCompile Include="src\GUI\heartrategraph.cpp" />
+    <ClCompile Include="src\GUI\heartrategraphitem.cpp" />
+    <ClCompile Include="src\GUI\infoitem.cpp" />
+    <ClCompile Include="src\GUI\mapview.cpp" />
+    <ClCompile Include="src\GUI\markeritem.cpp" />
+    <ClCompile Include="src\GUI\oddspinbox.cpp" />
+    <ClCompile Include="src\GUI\optionsdialog.cpp" />
+    <ClCompile Include="src\GUI\palette.cpp" />
+    <ClCompile Include="src\GUI\pathitem.cpp" />
+    <ClCompile Include="src\GUI\percentslider.cpp" />
+    <ClCompile Include="src\GUI\powergraph.cpp" />
+    <ClCompile Include="src\GUI\powergraphitem.cpp" />
+    <ClCompile Include="src\GUI\routeitem.cpp" />
+    <ClCompile Include="src\GUI\scaleitem.cpp" />
+    <ClCompile Include="src\GUI\sliderinfoitem.cpp" />
+    <ClCompile Include="src\GUI\slideritem.cpp" />
+    <ClCompile Include="src\GUI\speedgraph.cpp" />
+    <ClCompile Include="src\GUI\speedgraphitem.cpp" />
+    <ClCompile Include="src\GUI\stylecombobox.cpp" />
+    <ClCompile Include="src\GUI\temperaturegraph.cpp" />
+    <ClCompile Include="src\GUI\temperaturegraphitem.cpp" />
+    <ClCompile Include="src\GUI\tooltip.cpp" />
+    <ClCompile Include="src\GUI\trackinfo.cpp" />
+    <ClCompile Include="src\GUI\trackitem.cpp" />
+    <ClCompile Include="src\GUI\waypointitem.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\map\albersequal.cpp" />
+    <ClCompile Include="src\map\angularunits.cpp" />
+    <ClCompile Include="src\map\atlas.cpp" />
+    <ClCompile Include="src\map\coordinatesystem.cpp" />
+    <ClCompile Include="src\map\crs.cpp" />
+    <ClCompile Include="src\map\datum.cpp" />
+    <ClCompile Include="src\map\downloader.cpp" />
+    <ClCompile Include="src\map\ellipsoid.cpp" />
+    <ClCompile Include="src\map\emptymap.cpp" />
+    <ClCompile Include="src\map\gcs.cpp" />
+    <ClCompile Include="src\map\geocentric.cpp" />
+    <ClCompile Include="src\map\geotiff.cpp" />
+    <ClCompile Include="src\map\geotiffmap.cpp" />
+    <ClCompile Include="src\map\image.cpp" />
+    <ClCompile Include="src\map\jnxmap.cpp" />
+    <ClCompile Include="src\map\krovak.cpp" />
+    <ClCompile Include="src\map\lambertazimuthal.cpp" />
+    <ClCompile Include="src\map\lambertconic.cpp" />
+    <ClCompile Include="src\map\linearunits.cpp" />
+    <ClCompile Include="src\map\map.cpp" />
+    <ClCompile Include="src\map\mapfile.cpp" />
+    <ClCompile Include="src\map\maplist.cpp" />
+    <ClCompile Include="src\map\mapsource.cpp" />
+    <ClCompile Include="src\map\matrix.cpp" />
+    <ClCompile Include="src\map\mbtilesmap.cpp" />
+    <ClCompile Include="src\map\mercator.cpp" />
+    <ClCompile Include="src\map\obliquestereographic.cpp" />
+    <ClCompile Include="src\map\onlinemap.cpp" />
+    <ClCompile Include="src\map\osm.cpp" />
+    <ClCompile Include="src\map\ozf.cpp" />
+    <ClCompile Include="src\map\ozimap.cpp" />
+    <ClCompile Include="src\map\pcs.cpp" />
+    <ClCompile Include="src\map\polarstereographic.cpp" />
+    <ClCompile Include="src\map\primemeridian.cpp" />
+    <ClCompile Include="src\map\projection.cpp" />
+    <ClCompile Include="src\map\rectd.cpp" />
+    <ClCompile Include="src\map\rmap.cpp" />
+    <ClCompile Include="src\map\tar.cpp" />
+    <ClCompile Include="src\map\tileloader.cpp" />
+    <ClCompile Include="src\map\transform.cpp" />
+    <ClCompile Include="src\map\transversemercator.cpp" />
+    <ClCompile Include="src\map\utm.cpp" />
+    <ClCompile Include="src\map\webmercator.cpp" />
+    <ClCompile Include="src\map\wms.cpp" />
+    <ClCompile Include="src\map\wmsmap.cpp" />
+    <ClCompile Include="src\map\wmts.cpp" />
+    <ClCompile Include="src\map\wmtsmap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CONTRIBUTING.md" />
+    <None Include="gpxsee.pro" />
+    <None Include="gpxsee.qrc" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="licence.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

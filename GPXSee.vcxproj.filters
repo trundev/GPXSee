@@ -1,0 +1,829 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{3cdd517d-aa8a-43fe-b84c-ca779c9bd6f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\data">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="src\GUI">
+      <UniqueIdentifier>{70f16ecf-2144-4446-8487-d7b14cc0f538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{122b075e-bab9-4b99-86fa-4b564cff7d96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\map">
+      <UniqueIdentifier>{e32fe1d5-7a1c-4da6-8404-ef86e4ebb935}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\data\area.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\csvparser.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\data.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\dem.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\exifparser.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\fitparser.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\geojsonparser.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\gpxparser.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\graph.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\igcparser.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\imageinfo.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\kmlparser.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\locparser.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\nmeaparser.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\oziparsers.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\parser.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\path.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\poi.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\polygon.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\route.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\routedata.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\slfparser.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\tcxparser.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\track.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\trackdata.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\trackpoint.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\data\waypoint.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\app.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\areaitem.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\axisitem.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\cadencegraph.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\cadencegraphitem.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\colorbox.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\coordinatesitem.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\cpuarch.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\elevationgraph.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\elevationgraphitem.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\exportdialog.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\filebrowser.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\fileselectwidget.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\font.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\format.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\gearratiograph.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\gearratiographitem.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\graphitem.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\graphtab.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\graphview.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\griditem.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\gui.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\heartrategraph.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\heartrategraphitem.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\icons.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\infoitem.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\keys.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\mapview.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\margins.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\markeritem.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\oddspinbox.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\opengl.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\optionsdialog.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\palette.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\pathitem.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\percentslider.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\powergraph.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\powergraphitem.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\routeitem.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\scaleitem.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\searchpointer.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\settings.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\sliderinfoitem.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\slideritem.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\speedgraph.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\speedgraphitem.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\stylecombobox.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\temperaturegraph.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\temperaturegraphitem.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\timetype.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\tooltip.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\trackinfo.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\trackitem.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\units.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GUI\waypointitem.h">
+      <Filter>src\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\config.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\coordinates.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\greatcircle.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\kv.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\programpaths.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\range.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\rectc.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\rtree.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\staticassert.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\tifffile.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\util.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\wgs84.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\albersequal.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\angularunits.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\atlas.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\calibrationpoint.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\color.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\coordinatesystem.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\crs.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\ct.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\datum.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\downloader.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\ellipsoid.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\emptymap.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\gcs.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\geocentric.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\geotiff.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\geotiffmap.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\image.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\jnxmap.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\krovak.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\lambertazimuthal.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\lambertconic.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\latlon.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\linearunits.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\map.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\mapfile.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\maplist.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\mapsource.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\matrix.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\mbtilesmap.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\mercator.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\obliquestereographic.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\onlinemap.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\osm.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\ozf.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\ozimap.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\pcs.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\pointd.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\polarstereographic.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\primemeridian.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\projection.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\rectd.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\rmap.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\tar.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\tile.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\tileloader.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\transform.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\transversemercator.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\utm.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\webmercator.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\wms.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\wmsmap.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\wmts.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+    <ClInclude Include="src\map\wmtsmap.h">
+      <Filter>src\map</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\data\csvparser.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\data.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\dem.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\exifparser.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\fitparser.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\geojsonparser.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\gpxparser.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\igcparser.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\kmlparser.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\locparser.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\nmeaparser.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\oziparsers.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\path.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\poi.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\polygon.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\route.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\slfparser.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\tcxparser.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\data\track.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\app.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\areaitem.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\axisitem.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\cadencegraph.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\cadencegraphitem.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\colorbox.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\coordinatesitem.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\elevationgraph.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\elevationgraphitem.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\exportdialog.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\filebrowser.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\fileselectwidget.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\format.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\gearratiograph.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\gearratiographitem.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\graphitem.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\graphview.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\griditem.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\gui.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\heartrategraph.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\heartrategraphitem.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\infoitem.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\mapview.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\markeritem.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\oddspinbox.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\optionsdialog.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\palette.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\pathitem.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\percentslider.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\powergraph.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\powergraphitem.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\routeitem.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\scaleitem.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\sliderinfoitem.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\slideritem.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\speedgraph.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\speedgraphitem.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\stylecombobox.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\temperaturegraph.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\temperaturegraphitem.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\tooltip.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\trackinfo.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\trackitem.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GUI\waypointitem.cpp">
+      <Filter>src\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\coordinates.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\greatcircle.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\programpaths.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\range.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\rectc.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tifffile.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\util.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\albersequal.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\angularunits.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\atlas.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\coordinatesystem.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\crs.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\datum.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\downloader.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\ellipsoid.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\emptymap.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\gcs.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\geocentric.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\geotiff.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\geotiffmap.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\image.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\jnxmap.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\krovak.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\lambertazimuthal.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\lambertconic.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\linearunits.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\map.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\mapfile.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\maplist.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\mapsource.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\matrix.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\mbtilesmap.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\mercator.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\obliquestereographic.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\onlinemap.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\osm.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\ozf.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\ozimap.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\pcs.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\polarstereographic.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\primemeridian.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\projection.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\rectd.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\rmap.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\tar.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\tileloader.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\transform.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\transversemercator.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\utm.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\webmercator.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\wms.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\wmsmap.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\wmts.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+    <ClCompile Include="src\map\wmtsmap.cpp">
+      <Filter>src\map</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CONTRIBUTING.md" />
+    <None Include="README.md" />
+    <None Include="gpxsee.pro" />
+    <None Include="gpxsee.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="licence.txt" />
+  </ItemGroup>
+</Project>

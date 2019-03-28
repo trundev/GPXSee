@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(Windows) Launch",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "../build-gpxsee-Desktop_Qt_5_12_2_MSVC2017_64bit-Debug/debug/GPXSee.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "Path": "C:\\Qt\\5.12.2\\msvc2017_64\\bin;${env:Path}"
+            },
+            "externalConsole": true
+        }
+    ]
+}
