@@ -1,0 +1,43 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build QT",
+            "type": "shell",
+            "command": "call \"${env:VS150COMNTOOLS}..\\..\\VC\\Auxiliary\\Build\\vcvars64.bat\" && cd ${workspaceRoot}\\..\\build-gpxsee-Desktop_Qt_5_12_2_MSVC2017_64bit-${input:config} && C:\\Qt\\Tools\\QtCreator\\bin\\jom.exe",
+            "group": "build",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Clean",
+            "type": "shell",
+            "command": "cd ${workspaceRoot}\\..\\build-gpxsee-Desktop_Qt_5_12_2_MSVC2017_64bit-${input:config} && C:\\Qt\\Tools\\QtCreator\\bin\\jom.exe clean",
+            "group": "build",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+    ],
+    "inputs": [
+        {
+            "id": "config",
+            "description": "Build configuration",
+            "type": "pickString",
+            "default": "Debug",
+            "options": [
+                "Debug",
+                "Release"
+            ],
+        },
+    ]
+}
