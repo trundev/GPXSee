@@ -6,7 +6,7 @@
         {
             "label": "Build QT",
             "type": "shell",
-            "command": "call \"${env:VS150COMNTOOLS}..\\..\\VC\\Auxiliary\\Build\\vcvars64.bat\" && cd ${workspaceRoot}\\..\\build-gpxsee-Desktop_Qt_5_12_2_MSVC2017_64bit-${input:config} && C:\\Qt\\Tools\\QtCreator\\bin\\jom.exe",
+            "command": "call \"${env:VS150COMNTOOLS}..\\..\\VC\\Auxiliary\\Build\\vcvars64.bat\" && cd ${workspaceRoot}\\..\\build-gpxsee-Desktop_Qt_5_12_3_MSVC2017_64bit-${input:config} && C:\\Qt\\Tools\\QtCreator\\bin\\jom.exe",
             "group": "build",
             "presentation": {
                 "reveal": "always"
@@ -18,7 +18,7 @@
         {
             "label": "Clean",
             "type": "shell",
-            "command": "cd ${workspaceRoot}\\..\\build-gpxsee-Desktop_Qt_5_12_2_MSVC2017_64bit-${input:config} && C:\\Qt\\Tools\\QtCreator\\bin\\jom.exe clean",
+            "command": "cd ${workspaceRoot}\\..\\build-gpxsee-Desktop_Qt_5_12_3_MSVC2017_64bit-${input:config} && C:\\Qt\\Tools\\QtCreator\\bin\\jom.exe clean",
             "group": "build",
             "presentation": {
                 "reveal": "always"

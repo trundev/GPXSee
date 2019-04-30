@@ -39,20 +39,20 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <NMakeBuildCommandLine>call "%VS150COMNTOOLS%..\..\VC\Auxiliary\Build\vcvars64.bat" &amp;&amp; cd ..\build-gpxsee-Desktop_Qt_5_12_2_MSVC2017_64bit-$(Configuration) &amp;&amp; C:\Qt\Tools\QtCreator\bin\jom.exe</NMakeBuildCommandLine>
-    <NMakeOutput>..\build-gpxsee-Desktop_Qt_5_12_2_MSVC2017_64bit-$(Configuration)\$(Configuration)\GPXSee.exe</NMakeOutput>
-    <NMakeCleanCommandLine>cd ..\build-gpxsee-Desktop_Qt_5_12_2_MSVC2017_64bit-$(Configuration) &amp;&amp; C:\Qt\Tools\QtCreator\bin\jom.exe clean</NMakeCleanCommandLine>
+    <NMakeBuildCommandLine>call "%VS150COMNTOOLS%..\..\VC\Auxiliary\Build\vcvars64.bat" &amp;&amp; cd ..\build-gpxsee-Desktop_Qt_5_12_3_MSVC2017_64bit-$(Configuration) &amp;&amp; C:\Qt\Tools\QtCreator\bin\jom.exe</NMakeBuildCommandLine>
+    <NMakeOutput>..\build-gpxsee-Desktop_Qt_5_12_3_MSVC2017_64bit-$(Configuration)\$(Configuration)\GPXSee.exe</NMakeOutput>
+    <NMakeCleanCommandLine>cd ..\build-gpxsee-Desktop_Qt_5_12_3_MSVC2017_64bit-$(Configuration) &amp;&amp; C:\Qt\Tools\QtCreator\bin\jom.exe clean</NMakeCleanCommandLine>
     <NMakePreprocessorDefinitions>_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
-    <OutDir>$(SolutionDir)..\build-gpxsee-Desktop_Qt_5_12_2_MSVC2017_$(PlatformArchitecture)bit-$(Configuration)</OutDir>
-    <IntDir>$(OutDir)\$(Configuration)</IntDir>
+    <OutDir>$(SolutionDir)..\build-gpxsee-Desktop_Qt_5_12_3_MSVC2017_$(PlatformArchitecture)bit-$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)$(Configuration)</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <NMakeBuildCommandLine>call "%VS150COMNTOOLS%..\..\VC\Auxiliary\Build\vcvars64.bat" &amp;&amp; cd ..\build-gpxsee-Desktop_Qt_5_12_2_MSVC2017_64bit-$(Configuration) &amp;&amp; C:\Qt\Tools\QtCreator\bin\jom.exe</NMakeBuildCommandLine>
-    <NMakeOutput>..\build-gpxsee-Desktop_Qt_5_12_2_MSVC2017_64bit-$(Configuration)\$(Configuration)\GPXSee.exe</NMakeOutput>
-    <NMakeCleanCommandLine>cd ..\build-gpxsee-Desktop_Qt_5_12_2_MSVC2017_64bit-$(Configuration) &amp;&amp; C:\Qt\Tools\QtCreator\bin\jom.exe clean</NMakeCleanCommandLine>
+    <NMakeBuildCommandLine>call "%VS150COMNTOOLS%..\..\VC\Auxiliary\Build\vcvars64.bat" &amp;&amp; cd ..\build-gpxsee-Desktop_Qt_5_12_3_MSVC2017_64bit-$(Configuration) &amp;&amp; C:\Qt\Tools\QtCreator\bin\jom.exe</NMakeBuildCommandLine>
+    <NMakeOutput>..\build-gpxsee-Desktop_Qt_5_12_3_MSVC2017_64bit-$(Configuration)\$(Configuration)\GPXSee.exe</NMakeOutput>
+    <NMakeCleanCommandLine>cd ..\build-gpxsee-Desktop_Qt_5_12_3_MSVC2017_64bit-$(Configuration) &amp;&amp; C:\Qt\Tools\QtCreator\bin\jom.exe clean</NMakeCleanCommandLine>
     <NMakePreprocessorDefinitions>NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
-    <OutDir>$(SolutionDir)..\build-gpxsee-Desktop_Qt_5_12_2_MSVC2017_$(PlatformArchitecture)bit-$(Configuration)</OutDir>
-    <IntDir>$(OutDir)\$(Configuration)</IntDir>
+    <OutDir>$(SolutionDir)..\build-gpxsee-Desktop_Qt_5_12_3_MSVC2017_$(PlatformArchitecture)bit-$(Configuration)\</OutDir>
+    <IntDir>$(OutDir)$(Configuration)</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
