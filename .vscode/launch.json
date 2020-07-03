@@ -8,14 +8,26 @@
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "../build-gpxsee-Desktop_Qt_5_12_3_MSVC2017_64bit-Debug/debug/GPXSee.exe",
-            "args": [],
+            "program": "${input:config}\\GPXSee.exe",
+            "args": [""],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "env": {
-                "Path": "C:\\Qt\\5.12.3\\msvc2017_64\\bin;${env:Path}"
+                "Path": "${workspaceFolder}\\..\\QT-v5.14.2-win32-msvc_v16.0\\bin;${env:Path}"
             },
             "externalConsole": true
         }
-    ]
-}
+    ],
+    "inputs": [
+        {
+            "id": "config",
+            "description": "Build configuration",
+            "type": "pickString",
+            "default": "Debug",
+            "options": [
+                "Debug",
+                "Release",
+            ],
+        },
+    ],
+    }

@@ -4,9 +4,14 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Build QT",
-            "type": "shell",
-            "command": "call \"${env:VS150COMNTOOLS}..\\..\\VC\\Auxiliary\\Build\\vcvars64.bat\" && cd ${workspaceRoot}\\..\\build-gpxsee-Desktop_Qt_5_12_3_MSVC2017_64bit-${input:config} && C:\\Qt\\Tools\\QtCreator\\bin\\jom.exe",
+            "label": "qmake",
+            "type": "process",
+            "command": "${env:ComSpec}",
+            "args": [
+                "/c",
+                "call", "${env:VS160COMNTOOLS}..\\..\\VC\\Auxiliary\\Build\\vcvars64.bat", "&&",
+                "${input:QTDistr}\\bin\\qmake",
+            ],
             "group": "build",
             "presentation": {
                 "reveal": "always"
@@ -16,9 +21,30 @@
             ]
         },
         {
-            "label": "Clean",
+            "label": "nmake",
+            "type": "process",
+            "command": "${env:ComSpec}",
+            "args": [
+                "/c",
+                "call", "${env:VS160COMNTOOLS}..\\..\\VC\\Auxiliary\\Build\\vcvars64.bat", "&&",
+                "nmake", "${input:config}",
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always"
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ]
+        },
+        {
+            "label": "Developer Command Prompt",
             "type": "shell",
-            "command": "cd ${workspaceRoot}\\..\\build-gpxsee-Desktop_Qt_5_12_3_MSVC2017_64bit-${input:config} && C:\\Qt\\Tools\\QtCreator\\bin\\jom.exe clean",
+            "command": "call \"${env:VS160COMNTOOLS}..\\..\\VC\\Auxiliary\\Build\\vcvars64.bat\"",
+            "options": {
+                "shell": {"executable": "${env:ComSpec}", "args": ["/k"]},
+                "env": {"Path": "${input:QTDistr}\\bin;${env:Path}"},
+            },
             "group": "build",
             "presentation": {
                 "reveal": "always"
@@ -30,13 +56,22 @@
     ],
     "inputs": [
         {
+            "id": "QTDistr",
+            "description": "QT distribution",
+            "type": "pickString",
+            "options": [
+                "${workspaceFolder}\\..\\QT-v5.14.2-win32-msvc_v16.0",
+            ],
+        },
+        {
             "id": "config",
             "description": "Build configuration",
             "type": "pickString",
             "default": "Debug",
             "options": [
                 "Debug",
-                "Release"
+                "Release",
+                "Clean",
             ],
         },
     ]
